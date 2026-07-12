@@ -193,7 +193,7 @@ The canonical Goal-Driven Engineering Orchestration Framework, including Goal Mo
 
 The canonical Autonomous Engineering Mission Runtime, including Mission Model, Mission Lifecycle, Mission State Model, checkpoints, traceability, reporting, CLI concepts, and mission feedback, is defined in [mission-runtime](./mission-runtime/README.md).
 
-The canonical AI Platform Engineering CLI Architecture, including command model, implemented lifecycle commands, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, AI support, generator orchestration, and versioning, is defined in [cli](./cli/README.md).
+The canonical AI Platform Engineering CLI Architecture, including command model, implemented lifecycle commands, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, `aikb status`, `aikb stats`, AI support, generator orchestration, and versioning, is defined in [cli](./cli/README.md).
 
 The canonical Template Architecture and Generator Architecture are defined in [templates](./templates/README.md) and [generators](./generators/README.md). Prompt architecture for future AI assistance is defined in [prompts](./prompts/README.md). Non-canonical examples are reserved in [examples](./examples/README.md).
 

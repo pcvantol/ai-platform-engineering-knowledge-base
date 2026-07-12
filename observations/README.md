@@ -15,4 +15,5 @@ The canonical extraction rules for creating observations are defined in [../extr
 | Knowledge Source | Observation set | Status |
 | --- | --- | --- |
 | `KS-DJCONNECT-001` | [DJConnect Engineering Observations](./djconnect/README.md) | Observations recorded; candidates not created |
+| `KS-GITHUB-DJCONNECT-001` | [djconnect Engineering Observations](./local-github-djconnect/README.md) | Observations recorded; candidates not created |
 | `KS-PCVANTOL-DJCONNECT-WINDOWS-001` | [djconnect-windows Engineering Observations](./github-com-pcvantol-djconnect-windows/README.md) | Observations recorded; candidates not created |

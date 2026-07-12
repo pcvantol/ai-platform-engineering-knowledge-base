@@ -24,6 +24,8 @@ Validation Report examples are documented in [validation-reports/README.md](./va
 
 Improvement Report examples are documented in [improvement-reports/README.md](./improvement-reports/README.md).
 
+Statistics Report examples are documented in [statistics-reports/README.md](./statistics-reports/README.md).
+
 Multi-Agent workflow examples are documented in [multi-agent-workflows/README.md](./multi-agent-workflows/README.md).
 
 Execution plan examples are documented in [execution-plans/README.md](./execution-plans/README.md).

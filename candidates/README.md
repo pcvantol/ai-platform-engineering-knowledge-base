@@ -15,4 +15,5 @@ The operational candidate generation command is `aikb classify`, documented in [
 | Knowledge Source | Candidate set | Status |
 | --- | --- | --- |
 | `KS-DJCONNECT-001` | [DJConnect Knowledge Candidates](./djconnect/README.md) | Candidates recorded; concepts not created |
+| `KS-GITHUB-DJCONNECT-001` | [local-github-djconnect Knowledge Candidates](./local-github-djconnect/README.md) | Candidates recorded; concepts not created |
 | `KS-PCVANTOL-DJCONNECT-WINDOWS-001` | [github-com-pcvantol-djconnect-windows Knowledge Candidates](./github-com-pcvantol-djconnect-windows/README.md) | Candidates recorded; concepts not created |

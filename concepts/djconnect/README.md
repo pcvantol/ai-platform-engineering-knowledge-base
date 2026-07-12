@@ -1,11 +1,6 @@
-# DJConnect Knowledge Concepts
+# djconnect Knowledge Concepts
 
-This area contains Knowledge Concepts normalized from DJConnect Knowledge Candidates.
-
-Knowledge Source:
-
-- `KS-DJCONNECT-001`
-- [DJConnect Knowledge Source](../../sources/djconnect/README.md)
+This area contains Knowledge Concepts normalized from Knowledge Candidates for `KS-DJCONNECT-001`.
 
 These records are concepts only. They do not create Generalized Knowledge, Certified Knowledge, or Publications.
 
@@ -29,58 +24,7 @@ These records are concepts only. They do not create Generalized Knowledge, Certi
 | [KCN-DJCONNECT-014](./KCN-DJCONNECT-014.md) | Immutable Release Baseline | `KC-DJCONNECT-026`, `KC-DJCONNECT-027` | Governance | Generalized |
 | [KCN-DJCONNECT-015](./KCN-DJCONNECT-015.md) | Governed Release Roadmap and Readiness Workflow | `KC-DJCONNECT-028`, `KC-DJCONNECT-030` | Workflow | Generalized |
 | [KCN-DJCONNECT-016](./KCN-DJCONNECT-016.md) | Repository Release Hygiene and Closure | `KC-DJCONNECT-029`, `KC-DJCONNECT-032` | Practice | Generalized |
-
-## Concept Map
-
-```text
-KCN-DJCONNECT-003 Software Assurance Governance Boundary
-- supports ->
-KCN-DJCONNECT-002 Coverage Baseline Provenance
-
-KCN-DJCONNECT-001 Thin Verification Adapter Boundary
-- supports ->
-KCN-DJCONNECT-002 Coverage Baseline Provenance
-
-KCN-DJCONNECT-004 Profile Platform Client Contract Adoption
-- related to ->
-KCN-DJCONNECT-001 Thin Verification Adapter Boundary
-
-KCN-DJCONNECT-005 Versioned Verification Runtime Boundary
-- parent of ->
-KCN-DJCONNECT-006 Thin Verification Adapter Execution Boundary
-
-KCN-DJCONNECT-005 Versioned Verification Runtime Boundary
-- parent of ->
-KCN-DJCONNECT-008 Scenario Evidence and Verification Reporting Model
-
-KCN-DJCONNECT-007 Traceable Coverage Qualification Baseline
-- supports ->
-KCN-DJCONNECT-008 Scenario Evidence and Verification Reporting Model
-
-KCN-DJCONNECT-009 Independent Software Assurance Governance
-- parent of ->
-KCN-DJCONNECT-010 Evidence-Based Assurance Confidence Model
-
-KCN-DJCONNECT-010 Evidence-Based Assurance Confidence Model
-- supports ->
-KCN-DJCONNECT-011 Baseline-Gated Assurance Readiness
-
-KCN-DJCONNECT-012 Assurance Review and Reporting Traceability
-- supports ->
-KCN-DJCONNECT-011 Baseline-Gated Assurance Readiness
-
-KCN-DJCONNECT-013 Versioned Runtime Release Identity
-- supports ->
-KCN-DJCONNECT-015 Governed Release Roadmap and Readiness Workflow
-
-KCN-DJCONNECT-014 Immutable Release Baseline
-- supports ->
-KCN-DJCONNECT-015 Governed Release Roadmap and Readiness Workflow
-
-KCN-DJCONNECT-016 Repository Release Hygiene and Closure
-- supports ->
-KCN-DJCONNECT-015 Governed Release Roadmap and Readiness Workflow
-```
+| [KCN-DJCONNECT-017](./KCN-DJCONNECT-017.md) | pcvantol/djconnect Practice Candidate Group | `KC-DJCONNECT-001`, `KC-DJCONNECT-002`, `KC-DJCONNECT-003`, `KC-DJCONNECT-007`, `KC-DJCONNECT-008`, `KC-DJCONNECT-033`, `KC-DJCONNECT-034`, `KC-DJCONNECT-035`, `KC-DJCONNECT-036`, `KC-DJCONNECT-037`, `KC-DJCONNECT-038`, `KC-DJCONNECT-039`, `KC-DJCONNECT-040` | Practice | Awaiting Review |
 
 ## Concept Boundary
 

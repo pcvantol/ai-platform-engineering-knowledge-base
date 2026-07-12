@@ -68,6 +68,7 @@ Current registered Knowledge Sources:
 | Identifier | Name | Source type | Status |
 | --- | --- | --- | --- |
 | `KS-DJCONNECT-001` | [DJConnect](./djconnect/README.md) | Multi-repository software platform source | Approved |
+| `KS-GITHUB-DJCONNECT-001` | [djconnect](./local-github-djconnect/README.md) | Software repository | Registered |
 | `KS-PCVANTOL-DJCONNECT-WINDOWS-001` | [djconnect-windows](./github-com-pcvantol-djconnect-windows/README.md) | Software repository | Registered |
 
 ## Source Registration

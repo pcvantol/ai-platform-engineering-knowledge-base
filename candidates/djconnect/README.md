@@ -1,11 +1,6 @@
-# DJConnect Knowledge Candidates
+# djconnect Knowledge Candidates
 
-This area contains Knowledge Candidates derived from DJConnect Engineering Observations.
-
-Knowledge Source:
-
-- `KS-DJCONNECT-001`
-- [DJConnect Knowledge Source](../../sources/djconnect/README.md)
+This area contains Knowledge Candidates derived from Engineering Observations for `KS-DJCONNECT-001`.
 
 These records are candidates only. They are immature proposals awaiting review and do not create Knowledge Concepts, Generalized Knowledge, Certified Knowledge, or Publications.
 
@@ -13,14 +8,14 @@ These records are candidates only. They are immature proposals awaiting review a
 
 | Identifier | Title | Supporting observation | Knowledge category | Review status |
 | --- | --- | --- | --- | --- |
-| [KC-DJCONNECT-001](./KC-DJCONNECT-001.md) | ESP32 verification adapter uses explicit gates for live hardware and destructive operations | `EO-DJCONNECT-001` | Practice | Awaiting Review |
-| [KC-DJCONNECT-002](./KC-DJCONNECT-002.md) | Windows verification adapter records runtime primitives separately from product behavior assertions | `EO-DJCONNECT-002` | Practice | Awaiting Review |
-| [KC-DJCONNECT-003](./KC-DJCONNECT-003.md) | Raspberry Pi verification adapter records live target absence without treating it as adapter failure | `EO-DJCONNECT-003` | Practice | Awaiting Review |
-| [KC-DJCONNECT-004](./KC-DJCONNECT-004.md) | Cross-platform coverage baseline records repository commits, runtime version and native report provenance | `EO-DJCONNECT-004` | Workflow | Awaiting Review |
-| [KC-DJCONNECT-005](./KC-DJCONNECT-005.md) | Windows coverage baseline is recorded as post-baseline evidence without mutating the original baseline | `EO-DJCONNECT-005` | Decision | Awaiting Review |
-| [KC-DJCONNECT-006](./KC-DJCONNECT-006.md) | Software Assurance Platform separates behavioural verification from engineering quality governance | `EO-DJCONNECT-006` | Architecture | Awaiting Review |
-| [KC-DJCONNECT-007](./KC-DJCONNECT-007.md) | Apple Profile Platform adoption places profile context in the shared client contract layer | `EO-DJCONNECT-007` | Practice | Awaiting Review |
-| [KC-DJCONNECT-008](./KC-DJCONNECT-008.md) | Pi and Windows Profile Platform adoption preserves backend-owned profile resolution with client-specific boundaries | `EO-DJCONNECT-008` | Practice | Awaiting Review |
+| [KC-DJCONNECT-001](./KC-DJCONNECT-001.md) | ESP32 verification adapter uses explicit gates for live hardware and destructive operations | `` | Practice | Awaiting Review |
+| [KC-DJCONNECT-002](./KC-DJCONNECT-002.md) | Windows verification adapter records runtime primitives separately from product behavior assertions | `` | Practice | Awaiting Review |
+| [KC-DJCONNECT-003](./KC-DJCONNECT-003.md) | Raspberry Pi verification adapter records live target absence without treating it as adapter failure | `` | Practice | Awaiting Review |
+| [KC-DJCONNECT-004](./KC-DJCONNECT-004.md) | Cross-platform coverage baseline records repository commits, runtime version and native report provenance | `` | Workflow | Awaiting Review |
+| [KC-DJCONNECT-005](./KC-DJCONNECT-005.md) | Windows coverage baseline is recorded as post-baseline evidence without mutating the original baseline | `` | Decision | Awaiting Review |
+| [KC-DJCONNECT-006](./KC-DJCONNECT-006.md) | Software Assurance Platform separates behavioural verification from engineering quality governance | `` | Architecture | Awaiting Review |
+| [KC-DJCONNECT-007](./KC-DJCONNECT-007.md) | Apple Profile Platform adoption places profile context in the shared client contract layer | `` | Practice | Awaiting Review |
+| [KC-DJCONNECT-008](./KC-DJCONNECT-008.md) | Pi and Windows Profile Platform adoption preserves backend-owned profile resolution with client-specific boundaries | `` | Practice | Awaiting Review |
 | [KC-DJCONNECT-009](./KC-DJCONNECT-009.md) | Verification runtime should be versioned separately from source-specific scenarios | `EO-DJCONNECT-009` | Architecture | Promoted to Concept |
 | [KC-DJCONNECT-010](./KC-DJCONNECT-010.md) | Verification adapters should remain thin execution and evidence boundaries | `EO-DJCONNECT-010` | Architecture | Promoted to Concept |
 | [KC-DJCONNECT-011](./KC-DJCONNECT-011.md) | Coverage baselines should preserve provenance and qualification state | `EO-DJCONNECT-011` | Workflow | Promoted to Concept |
@@ -45,6 +40,21 @@ These records are candidates only. They are immature proposals awaiting review a
 | [KC-DJCONNECT-030](./KC-DJCONNECT-030.md) | Qualification milestones should produce release readiness evidence | `EO-DJCONNECT-030` | Workflow | Promoted to Concept |
 | [KC-DJCONNECT-031](./KC-DJCONNECT-031.md) | Release artifacts should preserve traceability to commits, reports and runtime identity | `EO-DJCONNECT-031` | Workflow | Promoted to Concept |
 | [KC-DJCONNECT-032](./KC-DJCONNECT-032.md) | Release closure should record completion evidence and next-action state | `EO-DJCONNECT-032` | Workflow | Promoted to Concept |
+| [KC-DJCONNECT-033](./KC-DJCONNECT-033.md) | pcvantol/djconnect may provide reusable knowledge from Eo Djconnect 001 | `EO-DJCONNECT-001` | Practice | Awaiting Review |
+| [KC-DJCONNECT-034](./KC-DJCONNECT-034.md) | pcvantol/djconnect may provide reusable knowledge from Eo Djconnect 002 | `EO-DJCONNECT-002` | Practice | Awaiting Review |
+| [KC-DJCONNECT-035](./KC-DJCONNECT-035.md) | pcvantol/djconnect may provide reusable knowledge from Eo Djconnect 003 | `EO-DJCONNECT-003` | Practice | Awaiting Review |
+| [KC-DJCONNECT-036](./KC-DJCONNECT-036.md) | pcvantol/djconnect may provide reusable knowledge from Eo Djconnect 004 | `EO-DJCONNECT-004` | Practice | Awaiting Review |
+| [KC-DJCONNECT-037](./KC-DJCONNECT-037.md) | pcvantol/djconnect may provide reusable knowledge from Eo Djconnect 005 | `EO-DJCONNECT-005` | Practice | Awaiting Review |
+| [KC-DJCONNECT-038](./KC-DJCONNECT-038.md) | pcvantol/djconnect may provide reusable knowledge from Eo Djconnect 006 | `EO-DJCONNECT-006` | Practice | Awaiting Review |
+| [KC-DJCONNECT-039](./KC-DJCONNECT-039.md) | pcvantol/djconnect-app may provide reusable knowledge from Eo Djconnect 007 | `EO-DJCONNECT-007` | Practice | Awaiting Review |
+| [KC-DJCONNECT-040](./KC-DJCONNECT-040.md) |  may provide reusable knowledge from Eo Djconnect 008 | `EO-DJCONNECT-008` | Practice | Awaiting Review |
+
+## Classification Summary
+
+| Field | Value |
+| --- | --- |
+| Knowledge Source | `KS-DJCONNECT-001` |
+| Total candidate count | 40 |
 
 ## Candidate Boundary
 

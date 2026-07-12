@@ -4,7 +4,7 @@ This area defines the canonical architecture for the AI Platform Engineering CLI
 
 The CLI is the primary engineering interface for consuming the Knowledge Base. It is intentionally thin. Engineering intelligence belongs inside Certified Knowledge, not inside CLI command implementations.
 
-This area contains the initial thin CLI runtime. `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, and `aikb status` are implemented. Future commands remain architectural until explicitly implemented.
+This area contains the initial thin CLI runtime. `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, `aikb status`, and `aikb stats` are implemented. Future commands remain architectural until explicitly implemented.
 
 ## Core Principle
 
@@ -52,7 +52,7 @@ Registered Knowledge Sources are read-only by default. Knowledge commands may cr
 
 | Command category | Commands | Repository modification policy |
 | --- | --- | --- |
-| Knowledge operations | `onboard`, `extract`, `classify`, `review`, `generalize`, `certify`, `ask`, `validate`, `improve`, `status` | No repository modifications will be performed. |
+| Knowledge operations | `onboard`, `extract`, `classify`, `review`, `generalize`, `certify`, `ask`, `validate`, `improve`, `status`, `stats` | No repository modifications will be performed. |
 | Current generation actions | `init`, `generate`, `evolve` | No registered Knowledge Source is modified. `init` and `generate` write only to their explicit output location; `evolve` is read-only. |
 | Future engineering actions | Conceptual `evolve --apply`, `apply`, `generate-pr` | May generate repository changes only when explicitly invoked by an engineer; not implemented by the current CLI. |
 
@@ -83,6 +83,7 @@ Initial command architecture:
 | `aikb validate` | Validate Knowledge Base consistency, traceability, health and qualification. | Implemented |
 | `aikb improve` | Analyze repository metrics and propose governed Knowledge Operating System improvements. | Implemented |
 | `aikb status` | Report implemented, architectural and placeholder CLI commands. | Implemented |
+| `aikb stats` | Report derived Knowledge Base statistics. | Implemented |
 | `aikb agent` | Future namespace for Multi-Agent Engineering Runtime operations. | Architecture only |
 | `aikb run` | Future Engineering Runtime Orchestrator entrypoint for planning task graphs and coordinating agents. | Architecture only |
 | `aikb plan` | Future command for rendering execution plans without running agents. | Architecture only |
@@ -96,7 +97,7 @@ Initial command architecture:
 | `aikb publish` | Generate or refresh publications from Certified Knowledge. | Architecture only |
 | `aikb doctor` | Report repository, quality, traceability, and health findings. | Architecture only |
 
-Only `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, and `aikb status` are implemented by the current runtime.
+Only `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, `aikb status`, and `aikb stats` are implemented by the current runtime.
 
 ## Mission Command Architecture
 
@@ -283,6 +284,16 @@ bin/aikb status --output /tmp/aikb-cli-status-report.md
 ```
 
 The command reports which commands are implemented and executable, which remain architecture-only, and which are non-executable placeholders. It does not modify the Knowledge Base unless an external report output is requested.
+
+Knowledge Base statistics:
+
+```text
+bin/aikb stats
+bin/aikb stats --format json
+bin/aikb stats --format markdown --output reports/aikb-stats.md
+```
+
+The report is derived and non-canonical. It reports lifecycle, lineage, domain, classification, certification, publication and runtime inventory counts without changing governance state. Promotion ratios are descriptive rather than quality thresholds, and registered Knowledge Sources remain read-only.
 
 ## Command Architecture
 

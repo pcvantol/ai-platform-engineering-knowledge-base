@@ -25,7 +25,7 @@ These records are observations only. They are repository-specific evidence recor
 | Knowledge Source | `KS-PCVANTOL-DJCONNECT-WINDOWS-001` |
 | Source repository | `pcvantol/djconnect-windows` |
 | Last extraction date | 2026-07-12 |
-| New observations in last run | 9 |
+| New observations in last run | 0 |
 
 ## Traceability Boundary
 

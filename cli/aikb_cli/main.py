@@ -22,6 +22,7 @@ from .program_generation import (
 from .project_bootstrap import BootstrapConfig, ProjectBootstrapGenerator
 from .review import KnowledgeConceptFormer, ReviewConfig
 from .status import CliStatusReporter, StatusConfig
+from .stats import KnowledgeBaseStatistics, StatsConfig
 from .validation import KnowledgeBaseValidator, ValidateConfig
 
 
@@ -303,6 +304,22 @@ def build_parser(registry: GeneratorRegistry) -> argparse.ArgumentParser:
         help="Optional status report file. If omitted, the report is printed to stdout.",
     )
 
+    stats_parser = subparsers.add_parser(
+        "stats",
+        help="Report read-only Knowledge Base statistics.",
+    )
+    stats_parser.add_argument(
+        "--format",
+        choices=("markdown", "json"),
+        default="markdown",
+        help="Report format. Defaults to markdown.",
+    )
+    stats_parser.add_argument(
+        "--output",
+        type=Path,
+        help="Optional derived report file. If omitted, the report is printed to stdout.",
+    )
+
     return parser
 
 
@@ -503,6 +520,14 @@ def main(
             print(f"Architecture only / placeholders: {result.architecture_only_count}")
         else:
             print(result.report, end="")
+        return 0
+
+    if args.command == "stats":
+        result = KnowledgeBaseStatistics(root).run(StatsConfig(format=args.format, output=args.output))
+        if result.output_path:
+            print(f"Statistics report: {result.output_path}")
+        else:
+            print(result.rendered, end="")
         return 0
 
     parser.error(f"Unsupported command: {args.command}")

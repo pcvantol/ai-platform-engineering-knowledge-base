@@ -41,6 +41,7 @@ IMPLEMENTED_COMMANDS = (
     CommandStatus("aikb validate", "Validate Knowledge Base consistency, traceability and qualification.", "Implemented", "validation.py", "Executable; read-only unless an external report output is requested."),
     CommandStatus("aikb improve", "Analyze Knowledge Operating System metrics and propose improvements.", "Implemented", "improvement.py", "Executable; read-only unless an external report output is requested."),
     CommandStatus("aikb status", "Report the implemented, architectural and placeholder CLI surface.", "Implemented", "status.py", "Executable; read-only unless an external report output is requested."),
+    CommandStatus("aikb stats", "Report derived Knowledge Base statistics.", "Implemented", "stats.py", "Executable; read-only unless an external report output is requested."),
 )
 
 
