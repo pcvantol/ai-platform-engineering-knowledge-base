@@ -4,7 +4,7 @@ This area defines the canonical architecture for the AI Platform Engineering CLI
 
 The CLI is the primary engineering interface for consuming the Knowledge Base. It is intentionally thin. Engineering intelligence belongs inside Certified Knowledge, not inside CLI command implementations.
 
-This area contains the initial thin CLI runtime. `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, and `aikb improve` are implemented. Future commands remain architectural until explicitly implemented.
+This area contains the initial thin CLI runtime. `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, and `aikb status` are implemented. Future commands remain architectural until explicitly implemented.
 
 ## Core Principle
 
@@ -70,6 +70,7 @@ Initial command architecture:
 | `aikb evolve` | Compare Engineering Programs against current Certified Knowledge and propose governed evolution. | Implemented |
 | `aikb validate` | Validate Knowledge Base consistency, traceability, health and qualification. | Implemented |
 | `aikb improve` | Analyze repository metrics and propose governed Knowledge Operating System improvements. | Implemented |
+| `aikb status` | Report implemented, architectural and placeholder CLI commands. | Implemented |
 | `aikb agent` | Future namespace for Multi-Agent Engineering Runtime operations. | Architecture only |
 | `aikb run` | Future Engineering Runtime Orchestrator entrypoint for planning task graphs and coordinating agents. | Architecture only |
 | `aikb plan` | Future command for rendering execution plans without running agents. | Architecture only |
@@ -82,9 +83,8 @@ Initial command architecture:
 | `aikb qualify` | Future namespace for Engineering Operating System qualification, evidence, traceability, explanations and scorecards. | Architecture only |
 | `aikb publish` | Generate or refresh publications from Certified Knowledge. | Architecture only |
 | `aikb doctor` | Report repository, quality, traceability, and health findings. | Architecture only |
-| `aikb status` | Summarize Knowledge Base state, lifecycle state, and pending work. | Architecture only |
 
-Only `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, and `aikb improve` are implemented by the current runtime.
+Only `aikb init`, `aikb onboard`, `aikb extract`, `aikb classify`, `aikb review`, `aikb generalize`, `aikb certify`, `aikb ask`, `aikb generate`, `aikb evolve`, `aikb validate`, `aikb improve`, and `aikb status` are implemented by the current runtime.
 
 ## Mission Command Architecture
 
@@ -259,6 +259,18 @@ bin/aikb improve generators --output /tmp/aikb-improvement-report.md
 ```
 
 The command collects repository, knowledge, generator and publication metrics, consumes validation evidence, and produces governed improvement recommendations. It does not modify repositories, Certified Knowledge, publications, templates or governance.
+
+CLI command status:
+
+```text
+bin/aikb status
+```
+
+```text
+bin/aikb status --output /tmp/aikb-cli-status-report.md
+```
+
+The command reports which commands are implemented and executable, which remain architecture-only, and which are non-executable placeholders. It does not modify the Knowledge Base unless an external report output is requested.
 
 ## Command Architecture
 

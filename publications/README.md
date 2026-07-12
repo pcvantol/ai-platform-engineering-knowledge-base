@@ -63,6 +63,7 @@ Publication types are extensible when a new type is needed for a distinct audien
 | Publication Set | Status | Source Certified Knowledge | Publications |
 | --- | --- | --- | --- |
 | [First Publication Generation Cycle](first-publication-cycle/README.md) | Published | `CK-DJCONNECT-001`, `CK-DJCONNECT-002`, `CK-DJCONNECT-003`, `CK-DJCONNECT-004` | Blueprint, Architecture Reference Guide, Engineering Handbook, Executive Summary |
+| [Generation 2 DJConnect Publication Source Set](generation-2-djconnect-source-set/README.md) | Source Set Only | `CK-DJCONNECT-001` through `CK-DJCONNECT-016` | None |
 
 ## Publication Object
 

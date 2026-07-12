@@ -105,6 +105,12 @@ Projects provide evidence. The Knowledge Base provides reusable knowledge.
 | [generalized](./generalized/README.md) | Project-independent knowledge generalized from concepts. |
 | [certified](./certified/README.md) | Authoritative certified knowledge. |
 | [publications](./publications/README.md) | Non-canonical publications derived from certified knowledge. |
+| [baselines](./baselines/generation-2/README.md) | Generation closure evidence and corpus baseline records. |
+| [knowledge-maps](./knowledge-maps/README.md) | Non-canonical maps for navigating Knowledge Object relationships and lineage. |
+| [domain-maps](./domain-maps/README.md) | Non-canonical maps from Knowledge Objects to engineering domains. |
+| [statistics](./statistics/README.md) | Operational knowledge population statistics. |
+| [summaries](./summaries/README.md) | Non-canonical engineering summaries derived from Knowledge Objects. |
+| [reports](./reports/generation-2-verification-engineering-population-report.md) | Population and review reports. |
 | [governance](./governance/README.md) | Governance for stewardship, review, certification, and publication. |
 
 ## Canonical Terminology
@@ -146,6 +152,14 @@ Projects provide evidence. The Knowledge Base provides reusable knowledge.
 ## Governance Overview
 
 Governance ensures that knowledge remains project independent, consistently classified, traceable through its lifecycle, and certified before it becomes authoritative.
+
+Generation 2 Verification Engineering population is recorded in [reports/generation-2-verification-engineering-population-report.md](./reports/generation-2-verification-engineering-population-report.md). It establishes Verification Engineering as a populated canonical engineering domain while preserving full lifecycle traceability from observations through Certified Knowledge.
+
+Generation 2 Software Assurance Engineering population is recorded in [reports/generation-2-software-assurance-engineering-population-report.md](./reports/generation-2-software-assurance-engineering-population-report.md). It establishes Software Assurance Engineering as a populated canonical engineering domain separate from Verification Engineering while preserving full lifecycle traceability from observations through Certified Knowledge.
+
+Generation 2 Release Engineering population is recorded in [reports/generation-2-release-engineering-population-report.md](./reports/generation-2-release-engineering-population-report.md). It establishes Release Engineering as a populated canonical engineering domain while preserving full lifecycle traceability from observations through Certified Knowledge.
+
+Generation 2 closure is recorded in [baselines/generation-2](./baselines/generation-2/README.md). It establishes `AI_PLATFORM_ENGINEERING_KNOWLEDGE_CORPUS_BASELINE_1` with status `GENERATION_2_COMPLETE`, `KNOWLEDGE_CORPUS_READY`, and `READY_FOR_CONTINUOUS_KNOWLEDGE_EVOLUTION`.
 
 The canonical lifecycle, including stage criteria, traceability, promotion rules, and evolution rules, is defined in [lifecycle](./lifecycle/README.md).
 

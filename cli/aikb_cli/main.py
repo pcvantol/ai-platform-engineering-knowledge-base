@@ -21,6 +21,7 @@ from .program_generation import (
 )
 from .project_bootstrap import BootstrapConfig, ProjectBootstrapGenerator
 from .review import KnowledgeConceptFormer, ReviewConfig
+from .status import CliStatusReporter, StatusConfig
 from .validation import KnowledgeBaseValidator, ValidateConfig
 
 
@@ -292,6 +293,16 @@ def build_parser(registry: GeneratorRegistry) -> argparse.ArgumentParser:
         help="Optional improvement report file. If omitted, the report is printed to stdout.",
     )
 
+    status_parser = subparsers.add_parser(
+        "status",
+        help="Report implemented, architectural and placeholder CLI commands.",
+    )
+    status_parser.add_argument(
+        "--output",
+        type=Path,
+        help="Optional status report file. If omitted, the report is printed to stdout.",
+    )
+
     return parser
 
 
@@ -480,6 +491,16 @@ def main(
         if result.report_path:
             print(f"Improvement report: {result.report_path}")
             print(f"Recommendations: {result.recommendation_count}")
+        else:
+            print(result.report, end="")
+        return 0
+
+    if args.command == "status":
+        result = CliStatusReporter(root).report(StatusConfig(output=args.output))
+        if result.report_path:
+            print(f"CLI status report: {result.report_path}")
+            print(f"Implemented and executable: {result.implemented_count}")
+            print(f"Architecture only / placeholders: {result.architecture_only_count}")
         else:
             print(result.report, end="")
         return 0

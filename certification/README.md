@@ -218,6 +218,16 @@ Re-certification is required when:
 
 Re-certification follows the same evidence based and traceable review expectations as initial certification.
 
+## Certification Cycles
+
+| Certification cycle | Scope | Decision |
+| --- | --- | --- |
+| [First Knowledge Certification Cycle](./cycles/2026-07-12-first-certification-cycle.md) | `GK-DJCONNECT-001` through `GK-DJCONNECT-004` | Certified |
+| [Generation 2 Verification Engineering Population Certification](./cycles/2026-07-12-generation-2-verification-engineering-population.md) | `GK-DJCONNECT-005` through `GK-DJCONNECT-008` | Certified |
+| [Generation 2 Software Assurance Engineering Population Certification](./cycles/2026-07-12-generation-2-software-assurance-engineering-population.md) | `GK-DJCONNECT-009` through `GK-DJCONNECT-012` | Certified |
+| [Generation 2 Release Engineering Population Certification](./cycles/2026-07-12-generation-2-release-engineering-population.md) | `GK-DJCONNECT-013` through `GK-DJCONNECT-016` | Certified |
+| [Windows Certification Cycle](./cycles/2026-07-12-github-com-pcvantol-djconnect-windows-certification-cycle.md) | Windows source-specific corpus | Certified |
+
 ## Deprecation and Retirement Policy
 
 Deprecation indicates that knowledge should no longer be preferred for active use, while preserving historical value.
