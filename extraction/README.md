@@ -22,6 +22,7 @@ The canonical ingestion pipeline that precedes candidate lifecycle review is def
 - Engineering intent, rationale, and value must be retained.
 - Knowledge quality is more important than extraction volume.
 - Certification remains governed and cannot be automated by extraction.
+- Extraction is read-only against every registered Knowledge Source: it must not modify source files, documentation, branches, commits, releases, or repository configuration.
 
 ## Canonical Extraction Flow
 
@@ -134,6 +135,7 @@ Extraction should not:
 - remove source lineage
 - import product source code
 - convert every source artifact into knowledge
+- modify a source repository or create repository changes implicitly
 
 ## Generalization Workflow
 

@@ -38,6 +38,7 @@ This repository must not contain:
 - The Knowledge Base is the canonical source of engineering knowledge.
 - Software repositories are sources of observations, evidence, and candidates.
 - Repositories for specific products or systems never become canonical knowledge sources.
+- Registered Knowledge Sources are read-only by default; the Knowledge Base consumes repository evidence and never changes a source repository during knowledge operations.
 - Knowledge flows in one direction only: from observed evidence toward certified knowledge and derived publications.
 - Certified knowledge is the highest authoritative form inside this repository.
 - Publications are never canonical.
@@ -118,6 +119,7 @@ Projects provide evidence. The Knowledge Base provides reusable knowledge.
 - **Knowledge Base**: this canonical repository.
 - **Software Repository**: a non-canonical source of evidence from a specific software system.
 - **Knowledge Source**: a registered external project, repository, or engineering source that may provide evidence for the Knowledge Base.
+- **Read-Only Knowledge Source Principle**: the architectural constraint that Knowledge Sources are autonomous evidence providers and are never modified by knowledge operations.
 - **Ingestion**: the governed pipeline that observes registered Knowledge Sources and produces Knowledge Candidate proposals.
 - **Repository Observation**: captured evidence from a software repository or engineering system.
 - **Knowledge Object**: the canonical conceptual representation of a knowledge item in any lifecycle stage.

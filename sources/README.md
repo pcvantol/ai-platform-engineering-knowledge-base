@@ -30,6 +30,19 @@ Knowledge Base
 
 Repositories provide evidence. They do not become authoritative knowledge sources.
 
+## Read-Only Knowledge Source Contract
+
+A registered Knowledge Source is an autonomous, externally owned and authoritative provider of engineering evidence. It is read-only for every Knowledge Base operation.
+
+The Knowledge Base must never, during onboarding, extraction, classification, review, generalization, certification, retrieval, validation, improvement, or status reporting:
+
+- modify source files or documentation;
+- change branches, versions, releases, or repository configuration;
+- rewrite history, create commits, push, or create pull requests; or
+- require a source repository to adopt Knowledge Base structure, tooling, or workflows.
+
+Repository changes are outside the Knowledge Source contract. They require a separately invoked engineering action and explicit engineer intent. The Knowledge Base records resulting repository changes as future evidence; it does not make them implicitly.
+
 ## Knowledge Source Model
 
 A Knowledge Source is a registered external project, repository, or engineering source that may provide evidence for the Knowledge Base.
@@ -89,6 +102,7 @@ Rules:
 - The Knowledge Base must not require sources to adopt specific implementation patterns.
 - The Knowledge Base must not require source repository restructuring.
 - The Knowledge Base must not write canonical knowledge back into sources.
+- The Knowledge Base must not modify source repositories during knowledge operations.
 - Extraction must preserve source context without making source context canonical.
 - Source ownership remains outside the Knowledge Base.
 - Source history must not be changed by integration.

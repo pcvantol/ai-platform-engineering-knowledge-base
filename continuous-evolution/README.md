@@ -360,6 +360,8 @@ Program evolution recommendations may cover:
 
 `aikb evolve` is read-only. It does not modify programs, repositories, Certified Knowledge, publications or engineering history.
 
+Future repository-changing evolution actions, such as a conceptual `aikb evolve --apply`, must be separate from `aikb evolve`, explicitly requested by an engineer, and traceable from the recommendation through the resulting repository commit. They are not implemented by the current CLI.
+
 ## Scalability Model
 
 Continuous evolution must scale across:

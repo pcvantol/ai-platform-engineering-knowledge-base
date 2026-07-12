@@ -8,6 +8,12 @@ This framework does not onboard repositories, connect repositories, extract know
 
 The first operational onboarding interface is `aikb onboard`, documented in [../cli/README.md](../cli/README.md). The command creates Knowledge Source profiles and Extraction Profiles inside this Knowledge Base, while leaving source repositories unchanged.
 
+## Read-Only Onboarding Boundary
+
+Onboarding is a Knowledge Base operation, never a repository modification workflow. `aikb onboard` may create or revise records inside this Knowledge Base only. It must not modify source files, source documentation, branches, commits, pull requests, releases, versions, or repository history.
+
+Any future repository change must be initiated as a separate engineering action by an engineer. It is not an outcome of source registration or source approval.
+
 ## Core Principle
 
 A repository is never assumed to be a Knowledge Source.

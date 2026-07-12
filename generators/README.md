@@ -48,6 +48,12 @@ Generators must not:
 - treat generated output as canonical;
 - hide source knowledge identifiers.
 
+## Engineering Action Boundary
+
+Current generators create derived outputs in explicitly selected output locations. They do not modify registered Knowledge Sources.
+
+Any future generator or engineering action that can propose or apply repository changes must be separately invoked by an engineer, state that repository changes may occur, require an explicit target repository, and preserve traceability from Certified Knowledge to the resulting repository commit. No knowledge operation may invoke such an action implicitly.
+
 ## Generator Inputs
 
 Canonical generator inputs:

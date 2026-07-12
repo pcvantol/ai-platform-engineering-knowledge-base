@@ -20,6 +20,7 @@ Future runtime interfaces, including the [AI Platform Engineering CLI](../cli/RE
 
 - The Knowledge Base is the canonical source of reusable engineering knowledge.
 - Repositories remain sources of evidence, not canonical authority.
+- Registered Knowledge Sources are read-only for knowledge operations; repository modification is a separately initiated engineering workflow.
 - Certified Knowledge remains the highest authoritative knowledge form.
 - Publications remain derived artifacts.
 - Governance remains authoritative over certification, publication approval, policy, and lifecycle changes.
@@ -52,6 +53,28 @@ Repeat
 ```
 
 The operating cycle is continuous. It does not imply automatic promotion or automatic approval.
+
+## Knowledge Operations and Engineering Actions
+
+Knowledge operations consume repository evidence and create, review, certify, validate, or report on Knowledge Base records. They do not modify registered source repositories.
+
+```text
+Knowledge Operations
+Repository
+->
+Knowledge Base
+
+Explicit Engineering Actions
+Knowledge Base
+->
+Engineering Proposal
+->
+Engineer Approval
+->
+Repository Change
+```
+
+Repository modification must be explicitly requested by an engineer. It is never an implicit side effect of knowledge extraction, knowledge evolution, certification, validation, or reporting.
 
 ## Operating Cycle Stages
 

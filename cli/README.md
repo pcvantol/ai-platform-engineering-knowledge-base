@@ -46,6 +46,18 @@ The CLI must not:
 - replace governance
 - treat publications as canonical source knowledge
 
+## Read-Only Knowledge Source Principle
+
+Registered Knowledge Sources are read-only by default. Knowledge commands may create lifecycle records, reports, and derived outputs inside the Knowledge Base or an explicitly selected output location, but never modify a registered source repository.
+
+| Command category | Commands | Repository modification policy |
+| --- | --- | --- |
+| Knowledge operations | `onboard`, `extract`, `classify`, `review`, `generalize`, `certify`, `ask`, `validate`, `improve`, `status` | No repository modifications will be performed. |
+| Current generation actions | `init`, `generate`, `evolve` | No registered Knowledge Source is modified. `init` and `generate` write only to their explicit output location; `evolve` is read-only. |
+| Future engineering actions | Conceptual `evolve --apply`, `apply`, `generate-pr` | May generate repository changes only when explicitly invoked by an engineer; not implemented by the current CLI. |
+
+The CLI must never implicitly modify source files, branches, documentation, versions, history, commits, pushes, or pull requests. A future repository-changing engineering action must declare that it may generate repository changes and preserve traceability from Certified Knowledge through an engineering recommendation and action to the resulting commit.
+
 ## Command Model
 
 Canonical command namespace:
