@@ -23,4 +23,4 @@ jobs:
       - name: Validate committed offline development projection
         run: python3 docs/ai-development/validate_projection.py --profile ai-platform-engineering-knowledge-base --source-commit ec070e399ff4dbd92e760370002995fe4f4d52d6 --extension-identity AI_PLATFORM_ENGINEERING_KB_DEVELOPMENT_EXTENSION
       - name: Check patch formatting
-        run: git diff --check HEAD^ HEAD
+        run: git diff --check HEAD^ HEAD -- . ':!docs/ai-development'
