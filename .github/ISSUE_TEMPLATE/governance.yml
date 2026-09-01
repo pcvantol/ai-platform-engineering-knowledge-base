@@ -1,0 +1,18 @@
+name: Knowledge governance decision
+description: Propose a bounded lifecycle, certification, or publication governance decision.
+title: "governance: "
+labels: [governance]
+body:
+  - type: textarea
+    attributes:
+      label: Decision or question
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Lifecycle and authority boundary
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Evidence and alternatives
