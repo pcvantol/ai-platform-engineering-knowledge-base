@@ -1,0 +1,19 @@
+name: Knowledge-base defect
+description: Report a defect in repository behavior, validation, or published knowledge navigation.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Safe reproduction and evidence
+      description: Do not include private source material or secrets.

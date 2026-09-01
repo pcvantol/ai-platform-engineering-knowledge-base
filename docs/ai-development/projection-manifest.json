@@ -1,0 +1,20 @@
+{
+  "contracts": [
+    "AI_BOOTSTRAP_CONTRACT.md",
+    "HANDOFF_CONTRACT.md",
+    "PROMPT_INITIALIZATION_CONTRACT.md",
+    "BRANCH_WORKTREE_CONTRACT.md",
+    "VALIDATION_EVIDENCE_CONTRACT.md",
+    "TDE_INTEGRATION_CONTRACT.md",
+    "REPOSITORY_GOVERNANCE_CONTRACT.md",
+    "PROJECTION_CONTRACT.md"
+  ],
+  "extension_identity": "AI_PLATFORM_ENGINEERING_KB_DEVELOPMENT_EXTENSION",
+  "materializer_version": "1",
+  "profile": "ai-platform-engineering-knowledge-base",
+  "projection_digest": "34d04daa1668d5ee1288a22d77aa143fecf4e167cb7fdc443d4082cb3ed45d77",
+  "projection_file_digest": "6b4d104221d6a3d90151c389b2b185bb67ee9423b768580b7ab1a33ea4a25e55",
+  "schema_version": "1",
+  "source_commit": "ec070e399ff4dbd92e760370002995fe4f4d52d6",
+  "source_repo": "pcvantol/ai-development-contracts"
+}

@@ -1,0 +1,26 @@
+name: Knowledge Base validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+      - name: Run repository tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+      - name: Validate committed offline development projection
+        run: python3 docs/ai-development/validate_projection.py --profile ai-platform-engineering-knowledge-base --source-commit ec070e399ff4dbd92e760370002995fe4f4d52d6 --extension-identity AI_PLATFORM_ENGINEERING_KB_DEVELOPMENT_EXTENSION
+      - name: Check patch formatting
+        run: git diff --check HEAD^ HEAD -- . ':!docs/ai-development'
